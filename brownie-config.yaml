@@ -1,0 +1,4 @@
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_project_id: ${WEB3_INFURA_PROJECT_ID}
