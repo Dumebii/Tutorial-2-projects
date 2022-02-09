@@ -1,6 +1,6 @@
-from brownie import accounts, config, ERC20tokens
+from brownie import accounts, config, PropertyAllocation
 
-def deploy_ERC20TOKENS():
+def deploy():
     pass
 
 def main():
@@ -8,5 +8,5 @@ def main():
     #print(account)
     account = accounts.add(config["wallets"]["from_key"])
     #account = get_account
-    ERC_TOKENS = ERC20tokens.deploy({"from": account})
-    print(ERC_TOKENS)
+    Property_Allocation = PropertyAllocation.deploy({"from": account})
+    print(Property_Allocation)
